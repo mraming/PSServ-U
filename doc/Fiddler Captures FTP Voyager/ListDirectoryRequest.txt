@@ -1,0 +1,14 @@
+GET https://ftp.pdo.co.om/?Command=List&InternalDir=Common&InternalFile=/Java/Responses/List.csv&ListFile=/Java/Responses/List.csv&Dir=%2F HTTP/1.1
+User-Agent: FTP Voyager JV 15.1.7.162
+X-Csrf-Token: C52A0622B13CCC8ECB77B90873B8B648
+Accept-Language: en-us,en;q=0.5
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+X-User-Agent: FTP%20Voyager%20JV%2015.1.7.162
+X-Is-FVJV: 1
+Cache-Control: no-cache
+Pragma: no-cache
+Host: ftp.pdo.co.om
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Cookie: CsrfToken=C52A0622B13CCC8ECB77B90873B8B648; Session=_019ff5174c9fab036dd4feea9284e5fe66f2aa87f93065c5da36e259bdf015629b8c1a2fff15483fd836bd5857f54e321ef3cbda78d9d9a0fa27ba11ecb734fbf8726522c456a619e0ae3d9367caeab5; SULang=en;Session=_019ff5174c9fab036dd4feea9284e5fe66f2aa87f93065c5da36e259bdf015629b8c1a2fff15483fd836bd5857f54e321ef3cbda78d9d9a0fa27ba11ecb734fbf8726522c456a619e0ae3d9367caeab5;CsrfToken=
+

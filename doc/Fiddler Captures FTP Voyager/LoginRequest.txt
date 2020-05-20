@@ -1,0 +1,9 @@
+POST https://ftp.pdo.co.om/Common/Java/Responses/Login.xml?Command=Login HTTP/1.1
+User-Agent: Java/1.8.0_251
+Host: ftp.pdo.co.om
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Content-type: application/x-www-form-urlencoded
+Content-Length: 46
+
+user=muf319&pword=rC%23z3Que&language=en%2CUS&
