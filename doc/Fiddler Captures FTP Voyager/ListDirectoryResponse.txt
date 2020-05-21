@@ -29,3 +29,6 @@ sapnco30P_19-20007348.zip,11689832,1510637362,1546069419,1510637362,0,0,0,0,0,0,
 Temp,0,1589756588,1589756588,1589716837,1,0,0,0,0,0,,0,0,0,0,0,0,0
 V_Livelink_Docs_Insert.zip,204715,1508308901,1546069419,1508308901,0,0,0,0,0,0,,0,0,0,0,1,0,0
 
+No documentation on the header row - it holds directory information but not sure what.
+Subsequent row columns:
+File Name	File Size (Bytes)	Last Modified (Unix Epoch seconds)	Last Access (Unix Epoch seconds)	Created On (Unix Epoch seconds)	IsDirectory	IsReadOnly	IsLink	IsImage	IsDrive	FileDriveType	FileDriveLabel	FileIsNormal	FileIsHidden	FileIsCompressed	FileIsEncrypted	FileIsArchived	FileIsAudio	FileIsVideo

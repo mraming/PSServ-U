@@ -7,7 +7,7 @@ using PSServU.ServU;
 namespace PSServ_U {
     [Cmdlet(VerbsCommon.New, "ServUSession")]
     [OutputType(typeof(Session))]
-    public class NewSessionCmdLet : PSCmdlet {
+    public class NewSessionCmdlet : PSCmdlet {
         // Hosts to conect to
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, Position = 0, HelpMessage = "URl to ServU server to connect to")]
@@ -33,15 +33,14 @@ namespace PSServ_U {
 
         protected override void ProcessRecord() {
             foreach(var url in Url) {
-                var suClient = new ServUClient();
+                var suClient = new Client();
                 var session = SessionManager.NewSession(SessionState);
 
                 try {
                     session.Connect(url, Credential.UserName, Credential.GetNetworkCredential().Password);
                     WriteObject(session, true);
                 } catch(Exception e) {
-                    ErrorRecord erec = new ErrorRecord(e, null, ErrorCategory.NotSpecified, session);
-                    WriteError(erec);
+                    WriteError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
                 }
             }
         }

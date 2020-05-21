@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PSServ_U;
 using PSServU.ServU;
 
 namespace PSServU {
-    internal class Session {
+    public class Session {
 
         internal Session(int sessionId) {
-            Sessionid = sessionId;
+            SessionId = sessionId;
         }
 
-        public int Sessionid { get;}
-        public ServUClient Client { get; private set; }
+        public int SessionId { get;}
+        public string Url { get; private set; }
+
+        internal Client Client { get; private set; }
 
         /// <summary>
         /// Disconnect the ServU session
@@ -30,7 +33,8 @@ namespace PSServU {
         /// </summary>
         /// <returns>Server welcome message from successful login</returns>
         public string Connect(string url, string userName, string password) {
-            Client = new ServUClient();
+            Url = url;
+            Client = new Client();
             return Client.Connect(url, userName, password);
         }
     }
