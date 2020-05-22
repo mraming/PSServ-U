@@ -1,0 +1,19 @@
+HTTP/1.0 200 OK
+Server: Serv-U/15.1.7.185
+Date: Fri, 22 May 2020 19:54:11 GMT
+Accept-Encoding: deflate
+Connection: close
+X-Frame-Options: sameorigin
+X-Same-Domain: 1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=0
+Pragma: no-cache
+Cache-Control: no-cache,no-store,max-age=0,must-revalidate
+Expires: -1
+Set-Cookie: Session=_b1c08efee96b29bba73a4f791e4f42cb253cdd6c1e1dc1fdaf956b3ad12b31e8f7274e7b371176eb5d2860fa94a8462d822927624aa8484947dac5c10a6e1ab9bf814e79024a85d3e0ae3d9367caeab5; path=/; secure; httponly;
+Set-Cookie: CsrfToken=0445326536667C464A1629363F1157F5; path=/; secure;
+Set-Cookie: SULang=en
+
+0,1,%2FTemp,0,0,,,1589756588
+

@@ -1,0 +1,165 @@
+POST https://ftp.pdo.co.om/?Command=Upload&Dir=%2FTemp%2F&InternalDir=Common&InternalFile=/Java/Responses/Result.csv&File=BBQ-18%20feb%202017.docx&TransferID=233347 HTTP/1.1
+User-Agent: FTP Voyager JV 15.1.7.162
+X-Csrf-Token: 0445326536667C464A1629363F1157F5
+Accept-Language: en-us,en;q=0.5
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+X-User-Agent: FTP%20Voyager%20JV%2015.1.7.162
+X-Is-FVJV: 1
+Accept: */*
+Content-Type: multipart/form-data; boundary=--------------------1723df82b5e
+Last-Modified: Sat, 18 Feb 2017 22:57:50 GMT
+Range: bytes=0-14832
+Cache-Control: no-cache
+Pragma: no-cache
+Host: ftp.pdo.co.om
+Connection: keep-alive
+Content-Length: 15027
+Cookie: CsrfToken=0445326536667C464A1629363F1157F5; Session=_b1c08efee96b29bba73a4f791e4f42cb253cdd6c1e1dc1fdaf956b3ad12b31e8f7274e7b371176eb5d2860fa94a8462d822927624aa8484947dac5c10a6e1ab9bf814e79024a85d3e0ae3d9367caeab5; SULang=en;Session=_b1c08efee96b29bba73a4f791e4f42cb253cdd6c1e1dc1fdaf956b3ad12b31e8f7274e7b371176eb5d2860fa94a8462d822927624aa8484947dac5c10a6e1ab9bf814e79024a85d3e0ae3d9367caeab5;CsrfToken=0445326536667C464A1629363F1157F5
+
+----------------------1723df82b5e
+Content-Disposition: form-data; name="File"; filename="BBQ-18 feb 2017.docx"
+Content-Type; application/octet-stream
+
+PK     ! 2 oWf      [Content_Types].xml  (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     j 0E    Ѷ J (  ɢ eh  4ND B     81 $14     { 1  ښl	 w% =   ^i7+   -d& 0 A 6 l4  L60# Ò S
+O    X   *  V$: B~   ^ K    ڃ
+ /P  I  ~7$  i  J&B0Z Du t OJ K(H    xG
+ L + v    dcӻ   W>*  \XR mp   Z}    HwnM V  n   - ")/ ZwB`   4   	  s DX   j  ;A*ʝ    c ֝   4   [ S  9 >       { V 4p    W &    A    | d ?      PK     !       N  
+ _rels/.rels  (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     j 0@   ѽQ   N/c    [IL  j   <  ] aG  ӓ zs Fu ]  U
+  	  ^ [  x     1x p    f  #I)ʃ Y         *D  
+i")  c$   qU   ~3  1  jH[{  =E    ~
+f?  3-   ޲] Tꓸ2 j) ,l0/%  b 
+   z   ŉ ,	 	 / |f\Z   ?6 !Y _ o ]A      PK     ! M$ E     word/_rels/document.xml.rels  (                                                                                                                                                                                                                                                                     N @  & C w    P  	 / 0m   v  
+o AJ  C  7  7Ӵ     ;z %jU     2Q/ˇ   X r  0Q[d5   M Ђ &6U Q 'ʈ4 Zsf  ]       n [A z<N o3  - D E~      ]QT޹l]#ɉ Q$lƁ	 DI > K  
+ }*H    ]   ƽ A  G  ] G}  u  W? D] >%
+G  Զ  O %qէ 	$o+Z$   i 60hs  lh˰$m  
+ $kQ^  | zyty  z ?  s L }[ pQ} ۘ}     PK     ! "
+^ {   ;     word/document.xml  r 6  ; w  *  av M6 & Ʉmgz    Z q% ^   } J 滉
+, I   _G st a  헐C " v j t) :毟  LCƄ  !  9i    ÛQ E'	 ǆ  =     qԶ,  Y	 #P   8Z8P  
+תU   (耔  w  439 K15W  zX
+ X OD_fvi  uf V j   U zi    Z: HHY    Li q j`\  I N g DIt  # >e4+ j3      $    Gک- O  (Ro  e  -Lـ\ 4  ^      "  1Y^n   2u L    /C Z   ]- -1}  	 u斄  Y    k \  "ДPN  IXrκ (    $     nx0  y  V- , 3  Hu  i x 3e   gL<` ^bvը Gw #c V    1 *  5U  .]$, w.   < s?wi"r/&? x T !a = ٦ }c      T<  }2 z      k K     ֊'   ]q I5M -#⨇" ̮ qG  B5  X H  uGe|O    t  iIʆ,/W ޻q k  p @ ) [   A x઒ 
+%   *$ jJ * ߡ! oj
+2Z  
+   5Q"`  rT  ?}F   7   S锷 S ;w Z F           vy G$4  
+ F    ܲ /LL7X z <' % j    $U  W5 ٬ -Z  EK)\   4  8 	
+ W  - y5 4 ^  g    rP
+   4A8    
+  );     JCS
+ -  fQ Нw    =ْ$ N   ؝ {tr͐ 	 x   
+! ~ b!"C  H  t9 ˃ ! j  Ǆ2 \Oj>/   JW\/     /    ^   N  .B    | Я  v 'N`   ?    g o> W  } h     .  0 e M6" @H H ! w   B ݽ     1   {  l AR^1jU v       ڧ ޿H  h   ? 3O ھ
+ +Ê   c   i V }B
+P   lu  n  V   ń S  f y
+  H  @ ,DD  	/ 
+J  3     H(= I      - Z 9 XMK !     m 
+|k(  N     E ~ٚ  X     䤿0 m    <    + YP -    ' JI e   #  鑧{ b j      s t
+!    C      X-d`     ( EA  `=pZ?8   K   	     8$   >&| h ޝԛ y4e _[&    ;;  $ O 'Sm   P%u	 \0"(   l  b  ǘ  F 	 5 B   JR  \ <  gʇp / ^%   | J  b W	i   >b _9L V
+z _  J  k  N L  ^q݄ dZ̈́ '  n  S髭   f  y    QǴ 3  @ hW  V   t ag I    *c T     z~<;U͎1  3     )   T' Ԑ  ^ON3 9Ȥ  m  2  .:j>  0  Ǝ2    `&  _   ?h       PK     ! f: $        word/theme/theme1.xml YM 7    ; 3 X 
+㱝  MBv   <# (֌ $ 	   z)  C  PJ
+4    Ц?   c l K   5      H z ,  	   k׮8   D(     a m[  , d k !     U   BK glt   ^  B  2    . 4 F 
+ )   YM l+ p{{<F!   K{ p>  _ƙl1=   f  Ѥ& ؜ Z' wm1NDN   -] Qvu jui  ے P - Ѥ  h<Z   6   |7h
+   ҟ 03͹ >[  ]`K  h  o 5
+_       hxʋ ~8V1, 򢷁 z ^_  @y   o9~ mixJ0 &h k6 b KȘ Fx s    BUK +         @%p Y|> c
+\ 0Qd 8
+o
+2 D Sw NC  W TF % )dM   B   k*  %  W Ο <   ӧ O~^  iwdq   _   s  _   k3   o~   o   {    ś /^  ?>3 }
+Fe 1J! n S .I 
+ }7       d@   h [s  ׃z S!&   C  QBg 7 T {  tS U  , ̓ Yw    Z    X   2H F ) 1   d @h0{   CR Ș[    c4 V   JE^ & " Zl [= M   DG    % Z     1Hqy xb"y4  p E c  5  c&  t ѽ)dƜ C<Ou$ hbB B  > 	H F (K  O D,Q` ! H  ;D E@ 5    } ޾'dȼ@dό  $ ~  1  yuM S ]( k  ?y"    f ݁    s " nZ  m u  Ї  }0  @ U  e         { ^鳺  u & zw#         ECѨ* h  0MDq1   )Pe    Q b  !f
+ 1     A5} <KI   j ө0 | .Ζ ] D<om V aK    傀 }  t
+ V x	5    X    ,  "+b Y@   9#      Sn_dw  L} u  :  n2  (-7 Di&    ; ug R   & V } Z Ț6 L Y b 5< &Ӯ= BQL    	p u / o eJ   0Օ ?ER
+ T  rp  V   ?Pr Ë  *'  0 [ZVUї;1 ^,+d&H%ѩ5 3z @y  ` _F3B   WQ\   V ~5[mQ  	X (e1 ᪼ S  b >+    ( I  {   (  D  f x |  J 5V t k] кm      `5  @mժS ᅠ4 rin;#v}  Zy@ JU x=AF     s   3 ?, J Z
+u9 ֌     |7 {A i{   p J      Ws   c  5/{( g |  E o  I k    U   Ue        XHD Q > 4: f     kW:A W 7 V  vg ضN     + ZTܦ# ;  [  n o\  " b  w^ k o      PK     ! ! 	    
+     word/settings.xml V n 8}_`    : dYv :   6E ]T  Pe 
+$e -  wH   d t >  3w   GF   4|DWa0   y  ~3 m σ     {{ 46   \p  r썑 h  =fH_	 9  P T Cꡑ R0 )% 4  0
+:7b4 g  !# Z ƚd  I  o ^ 5Y  a q 0  {"     7     {E z (|E G  ' פg
+ % . Q   } 䙣  W +ѹ (t   '?  ~     \L:#}b  ;  5-i ;R( Z u `ev  B  B:З 6p    /B  1 X p 0"q , 
+un   k )u3SR   1 )Ā ^ l*\   {T FHP:  ~ ] { Pi  %*  Rp  z  K %L    ,     I  A=s   5      E & ! 
+$` (R {  ܜ( @ 9     hC       {	`n#   ?I   4Ц_  Ć %J	u +  /
+F +@ k[ Q     
+V O    J  '! W
+  $   6S  H &o  %dM7  K , .Ү K  2  .   ` N  EdGi:   c ] + T  b X l :Y B=    Z  H [@3D f n YV-W vg Ej   4ԋR  | = ՟J4 E 
+ɖ ^%J ΒpsG   Ƚ Ex5  xP O}{  * Q C  N  缣,U   ")[  hP ۛ   W   (vq   [ }  V ݡ  ^v 7  q/K , e/    R+ þP  `    kA 8  } ? M {$   @/ 
+ e   ? ˁ+b ϔ$C pGa F Ӧ $s k1 ,/=T  ? Ǝ   bߜ   +   M 
+ F«c       -L Z.   Y nߪh ^+s$ {    q a tҚ~ ܬ i N 7 p9L x1    p1oV d    ?ݐ          PK     ! .uK          word/webSettings.xml   N 0  G " i.  H *B r   3i-l e 
+   4Ii ,  3   2#O..ߵ 6 DS t    J e ^  O Y 7Wh `-xv9? s  
+     Q ϵ( * Ǳ+  OЂ    R  5wok{*P[d) m %Ɍ
+ 
+ֵp b    ;PDD W    
+ AWY   y  y K Iώ@Z
+  0 a  : Ӥ       ` ab: b jxg   Ҡ " QWQ fsz Jn pFM.  ei6   $; 
+J ګ r  
+  *   a &  \ ~    
+ 7 YTn    &2J ǶnX.` *   =Bt6 Y~ h  N>      =     kt
+    
+T h^ ﺌ+  ߇  v        PK     ! E ,   tz     word/styles.xml ]W 8     > ڽ膐 ݜ   
+
+g     ׊ 
+   G  W  DNY Kְ7{ S dU %  _~}I  ' r       ( i # >   ?\  0
+  yJOG 4       $/^c    'Ix:Z  do/ 4! {   ع YB
+ 1{ KH T ޅ<Y   Y̊׽      d}(| `!   2 i   2
+"O %[ 5  g * ! sq I\   5f<      x/F H   x_    !p  G9 !5b/M  (H ǔgd
+ 8 @ *P  ' ͈  邔q ˏ } ? O  O <x>!y ؃ @%LP  Ҝ  J  ,g u R Ӻ' 
+c 9  hO   G  I    A  B   -& c     ̞  {:"ٻٙ4   V 5w  I5 "!S EAE    %4fR    J9¤, nD  k q " g   ^     f  q:Rm   o 3 3!   Gզ 8 	 fQDS  E ǒ  sm  ~  _oy   ' Sq]  t% $  D  4  K i\      ' 엔 |    (ā ȍ mg [Ǯ  jh V
+Mߪ ÷j  :~  > UC
+ W6 ҈ TB    . E h Elh EKh E*h E	h %  K 9 0Ep
+ڢ   %ڻ   7  )   {p  N n   ݍ ;  qwgo7  d  VK  F ,- l y  }N# ` " ONz4 r 0Uf  `ZH    D >   
+ "X  2  Ў  ' E  (<   ef    f4
+       `    Cl ȣ7M#  W $ u@  y)E <uB '   -ˇ    eSO /~BL   
+3 4P ᕁ /  "M 4R  i 4 ӸU  k 4 Ӹi  qӴ     X xs 1   "    ~  cJ ` t ϙ $# Y-yV k3  s > 5 ׺^ ȅ8j     A % 5ϓ  <O[ K N,    O=3+ E h  hg$.  p  bx mpŲܛڱ"  \ Jw  | ^ ؆5\V Y k 4 C/c> I ׯ+    i0  1  ?  xk   KzI 2Y-I T  @   ԃ; |@ 1a  ] K + 뇻   d )   O 1         (  WOG{    ]0 LE ' Xf  y C 7 : $    3Z] RPO IVբÃ D^|   jH     |   
+ 8m   ?i8< }ၗ3C_ B TK]e 7|   
+_"(o  AƯ  m l  `/b     3    <  ;   < lQ   z  my\&i    +    2  ᔜ  +c 7g( /O( /7( /( W  Bǀ
+ Lǀ
+ V  yZ0_q u   +  g
+ +  W )  8 | b!    +    &-h   ^=!/c H<   h _țxZ]  ) Q  Η й  I  ~y8#J sO  6  l^   L  1 
+ 1	   , d   -c    N{޲ e̖  & h e] 7 v7 6 G  ,mfw4beRw Lq4 o " a< m YI4,{Z 6 v[nV 
+ 㞖  =- N ]z L   @8u g	  (Z 6 Hk˶< T  0  @  ӌݾ x   )9 ) ueGt	    ̎I       Et   {ɫ       u#NiN VΤ W ,c   Ǝ w  	Ȏ蕉 樔d   MvD $eG   p 
+   w V ⒭    ;-T @
+u J  @	 ;	R B  P!-T   	  
+ ] 
+).B  P!-T @
+" B  P  Vs' B
+Z  *D   ֋ 
+ qB  .B  B
+Z  *D  
+h BZ  *0w*   
+h BZ խ  B  8 B{ B  P!-T @
+" B  P!-T @	 ;	R B  P!-T c   B{ P   P! E   *D  
+h BZ  *D  
+̝ 
+)h BZ    'J e c YO    ҝ f  m & Qu    " s   x8Q F? ǌ SԖ  M  $   ׋ ;|L   . {! o  > k	ΩL B޴E޴+ MK  ve_ L Ӯ  tY_ " #`ܕf ż+[ p  r aG +3 p   ax  m} s   חBW8 c; +,   t   ivB_  	} h'  i  kG =lG    jw  	XWC        j rs5L XWC     Npr5     ]
+Qn  S Ր u5$`]=pB b ]
+Qή (7W   Ր u5$`]
+	N wWC   !  ՠJF      !      j rv5Du Z Ei  a  3q a KΆ C dX;VK  Z   }   L  	} g' u     w      j\   jw  	XW %  q R  q R  qՒ ոj  ոj      Npr5 Z t5 Z t5 Z  W-  W-  W-  z lŸ W-u W- ]    \    \    \      UK   UK   UKvW㪥6W㪥6W㪥6W %  q R  q R  q ҝ0a5KHV  wM eA' {n `J      
+ +  qㆠ zƪ / D AIcٍ@ rKoV  ? V-* M     1 o^ Z qT_ P  S     r   u3K U{7 PG   X O \T z          ~=   / } M~ e) է͛   ]b   & "1-
+^=  g nH{N7  6 g [   K M o   a y  | ~[(eT    p Q	I}YI tD  TĨ  :   W MZ^ Vm3  f  P     b 0 O^ ⦞ U  ["B  Fk  J  B   > tթ * YCV      *  ?7  g 2    
+ Pb   ;R}   _  B
+O   Jl W F  gj     >v I  }u 5 ə e եFCG  d   2 ;    ] v{   @%5  CzW^a  T(x R $   I  p 2񠦢m 4   ( bٵI [  * *H[f 3 }     \ q z   ރs ] -     ե>h    M.6äGo  hY[>	 J    ]    9   x  .   l@;W5    ~  N Kfm B5߄Z m oB  G,  #     *       c] a\mC qGf  . 
+ Of   i   v    O      PK     !    #   "   docProps/core.xml  (                                                                                                                                                                                                                                                                    Qo    + ?X ;`g]R R7 i   U  1  ,#  Ϳ cg^  7    (  L      -I  Fi ې  &] $  Jԍ 
+9@ W  Y!   [ 8 !$ d nC  4 g0","ac  F`  :! b 4g +5 B	  n2  R I ^| 
+  P   f   Xo}  h<8     m h =  _ w SSm ^I e $G 5 =- *     ) k A` ˭   0q=3 w ám 
+ zELA ^; sܳ H " 6 I  >̏y  *<   _ ˞   v EPeβU  4[W _.8c  s   d   JbG   1     !'ߪ ֜]   OBs  g  *   jnCW翺 
+     PK     !  (P)  N`     word/numbering.xml  n 8  W w@ o 8 h (Xu ;Zi:  DM  	Pn e      0i1 ,윫   ?   ;?, w _    4
+b2  {E a ǳ ,ҧ ɝ-   #3/ 	H[ J ~  ݦOV Sֱ 4H  $ @ZfYҗ  _  K   qϳ{?  x>|,ob:   * O	 }  L  #k/ J9  4  6, 
+겿 h _wjgCvd )    ڔ :K 2Ϫ! 
+	  J  RcpQs	 	&  <    _ B <  J p e 4 l 4    Ҋ ~)qW  C E.奊  <   * $˟(S b .  ^{     D    ª &QO  6㌊i 	  ~9 QXd~\QUN .QG    3 L"/   
+ f   K @
+3  $ RBN    dq , F U S
+ S{"/   ;h  e  % q % ʑ Z  zӐe  Ǧ   @  Dz` o f    w   l   
+ S  Y 7o(w a:  { ] 
+I 
+_{!{ i ah d~'Z Y  ^  y   r;   O~/    Y  Ukd  r  N  7v)  gI  FEWEQ < < : "  T'Q 8] ! j g Z   基 w j
+   E % |   e  L Y w ̓  δ Lb      e qM 0uY gx ʔb   ' m% F%    l^c     ]  Xa 
+0 }    |  ͎ݪ U3._  _  Z7  bu  zs L  v ֭@ ":4 w(Pg !    _  X  q    q &  _ q : P   9κJ   ^  g_  L]p
+? q   gE_n   l 2  Y _} XC d X  V@_@_@_@_@ߪ0  b   s    n }9%tG_  tet  x ؚ]        V  s /     } w;  WYg  SA   E_M ugh   ?           Ua }   
+ + 8@_1    3  ɨ Ջ   ql  ׌          /R}    } F_ W}   }   = ڂ{ ώ     ї׫3     q  
+ a蘶  uq i S kG_8  S  `88 m)   9N}  W qp +  9  쌾      E   4e       ^ q    b  s  /_w  w ۺ>   /  v    }}}}}/ 8@_@_1   9 З  K fƛ  Q !y#     m	    #㖰  #ޅ G 0 H   /  0 =,    0 =, P    ÿ      PK     !  )_f6  g	     word/fontTable.xml ێ 0  + , /9 V]
+ JU/  ^ $Vc;   }'       JUcEqf ? /3ss  r   3|J  f#u:  O  	% ް h1 { v   M9M v@p    3 9WL=x&  ) Fgb b_m )f n +nT  \ \      2  $    o Ю  Y   ѐ j %j    .   *o    Lu   րI   FTK    g* ;c $F   {%^(Q|z jc :G%<  H-L   $ T3  ǽZ   L v, Q # C   #? ^  ĝ 4  acN    ` F1 8
+ xv Ud 
+d  - } i/ X  cK Y3<  Zgrl	~X    OR	  EI  O	q  !   q &R   ,1 p Z Y %   :D E ~
+ ˉ,  Ja+&gh H຦Rшz Pf# ) |  YD÷` F ( L t  ¶  C  ` \[y&%Vu*T#  {    | 9) (~ iH O2  Y   ǣH    gPܵ]   { ]ѩ~    Ϣh'0      PK     !  ی       docProps/app.xml  (                                                                                                                                                                                                                                                                   S n 0  ? 7  - EŐb a[ mϚL' dI ؠ ׏ O v O   I    G  x fլd8   k P Z " r            F   T  Kkv@+Γ>@ ҌҎ2   B q } 
+ ^?w   r   5 \ I    #  h u /=֧@zR       5;    =*[ du=     V ! J  '  G G(6  Fj \, 	 q )k Bj  jt ɷX      y  w @?G 'Y
+ S  82 A     Q ë    V6  * @  q    V   WG  c  O   U  okvT ( l,ɀmHemВ      ؼ M  p     }Ko   r    jf'wv  Ս r _>!j  j o k/  ԟvAi ɲ   g  (44 i&S@  
+     Cs  ; o     j1+ V  E ~$ 
+     PK-      ! 2 oWf                      [Content_Types].xmlPK-      !       N  
+                _rels/.relsPK-      ! M$ E                    word/_rels/document.xml.relsPK-      ! "
+^ {   ;               F	  word/document.xmlPK-      ! f: $                     word/theme/theme1.xmlPK-      ! ! 	    
+               G  word/settings.xmlPK-      ! .uK                    e  word/webSettings.xmlPK-      ! E ,   tz               -  word/styles.xmlPK-      !    #   "               J)  docProps/core.xmlPK-      !  (P)  N`               	,  word/numbering.xmlPK-      !  )_f6  g	               b1  word/fontTable.xmlPK-      !  ی                    3  docProps/app.xmlPK         6    
+----------------------1723df82b5e--

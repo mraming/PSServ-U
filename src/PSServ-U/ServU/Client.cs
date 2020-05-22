@@ -4,6 +4,7 @@ using System.IO;
 using System.Management.Automation;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Handlers;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,11 @@ namespace PSServU.ServU {
     public class Client {
         private Uri baseAddress;
         private HttpClient httpClient;
+        private int transferId = new Random().Next(100000, 1000000);
+
+
+        public delegate void ProgressReportHandler(int percentage, long bytesSent, long? totalBytes);
+        public event ProgressReportHandler ProgressReport;
 
         public string Connect(string url, string userName, string password) {
             return ConnectAsync(url, userName, password).GetAwaiter().GetResult();
@@ -37,7 +43,10 @@ namespace PSServU.ServU {
                 UseDefaultCredentials = false
             };
 
-            httpClient = new HttpClient(handler) {
+            var progressHandler = new ProgressMessageHandler(handler);
+            progressHandler.HttpSendProgress += HttpSendProgress;
+
+            httpClient = new HttpClient(progressHandler) {
                 BaseAddress = baseAddress
             };
 
@@ -123,8 +132,49 @@ namespace PSServU.ServU {
             return result;
         }
 
-        public override string ToString() {
-            return baseAddress.ToString();
+        public void SendFile(string file, string remotePath) {
+            SendFileAsync(file, remotePath).GetAwaiter().GetResult();
+        }
+
+        public async Task SendFileAsync(string file, string remotePath) {
+            if(string.IsNullOrWhiteSpace(remotePath)) {
+                remotePath = "/";
+            } else {
+                // Ensure remotePath starts end ends with a /
+                if(!remotePath.StartsWith("/")) remotePath = "/" + remotePath;
+                if(!remotePath.EndsWith("/")) remotePath += "/";
+            }
+
+            // A ServU quirc: The server is not stateless - even beyond the authentication aspect. We actually need to list
+            // the directory first as that list list directory determines the folder where the file is uploaded
+            await GetFileSystemInfoAsync(remotePath);
+
+            var fileName = Path.GetFileName(file);
+
+            using(var fs = new FileStream(file, FileMode.Open, FileAccess.Read)) {
+
+                HttpContent fileStreamContent = new StreamContent(fs);
+                // Set your own boundary, otherwise the internal boundary between multiple parts remains with quotes which
+                // RFC compliant but ServU chokes on.
+                string boundaryDelimiter = $"----------{DateTime.Now.Ticks:x}";
+                using(var _multiPartContent = new MultipartFormDataContent(boundaryDelimiter)) {
+                    _multiPartContent.Add(fileStreamContent, "file1", fileName);
+                    //remove quotes from ContentType Header
+                    _multiPartContent.Headers.Remove("Content-Type");
+                    _multiPartContent.Headers.TryAddWithoutValidation("Content-Type", "multipart/form-data; boundary=" + boundaryDelimiter);
+
+                    var response = httpClient.PostAsync($"?Command=Upload&Dir={Uri.EscapeDataString(remotePath)}&InternalDir=Common&InternalFile=/Java/Responses/Result.csv&File={Uri.EscapeDataString(fileName)}&TransferID={transferId++}", _multiPartContent).Result;
+                    if(!response.IsSuccessStatusCode) {
+                        var body = await response.Content.ReadAsStringAsync();
+                        throw new ApplicationException($"Upload failed with response [{body}]");
+                    }
+                }
+            }
+        }
+
+        private void HttpSendProgress(object sender, HttpProgressEventArgs e) {
+            HttpRequestMessage request = sender as HttpRequestMessage;
+            if(ProgressReport != null) ProgressReport(e.ProgressPercentage, e.BytesTransferred, e.TotalBytes);
         }
     }
 }
