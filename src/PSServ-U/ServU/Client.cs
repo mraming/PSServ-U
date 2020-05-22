@@ -45,6 +45,7 @@ namespace PSServU.ServU {
 
             var progressHandler = new ProgressMessageHandler(handler);
             progressHandler.HttpSendProgress += HttpSendProgress;
+            progressHandler.HttpReceiveProgress += HttpReceiveProgress;
 
             httpClient = new HttpClient(progressHandler) {
                 BaseAddress = baseAddress
@@ -172,8 +173,44 @@ namespace PSServU.ServU {
             }
         }
 
+        public void DownloadFile(string remoteFile, string localPath, bool overwrite = false) {
+            DownloadFileAsync(remoteFile, localPath, overwrite).GetAwaiter().GetResult();
+        }
+
+        public async Task DownloadFileAsync(string remoteFile, string localPath, bool overwrite = false) {
+            if(string.IsNullOrWhiteSpace(remoteFile)) throw new ArgumentNullException("remoteFile", "remoteFile is a required parameter that cannot be null, empty or whitespace only");
+            // Ensure remoteFile starts end ends with a /
+            if(!remoteFile.StartsWith("/")) remoteFile = "/" + remoteFile;
+
+            string fileName = Path.GetFileName(remoteFile);
+            string localFileName = string.IsNullOrWhiteSpace(localPath) ? fileName : Path.Combine(localPath, fileName);
+
+            using(HttpResponseMessage response = await httpClient.GetAsync($"/?Command=Download&File={Uri.EscapeDataString(remoteFile)}&InternalDir=Common&InternalFile=/Java/Responses/Result.csv")) {
+                response.EnsureSuccessStatusCode();
+
+                // ServU quirc: When the remote file doesn't exist, we still get an HTTP Success (200) response.
+                // But we can detect this condition in several ways:
+                // - Either of the following headers is not in the response: Content-Type, Content-Disposition, Last-Modified, SU-Last-Modified
+                // - Response body only has the digit 6
+                // For now, we'll just look for the SU-Last-Modified header (I was having trouble checking the Content-Type
+                //and Content-Disposition header). If the SU-Last-Modfied header not there, we assume file is not found.
+
+                if(response.Headers.Contains("SU-Last-Modified")) {
+                    using(var fs = new FileStream(localFileName, overwrite ? FileMode.Create : FileMode.CreateNew, FileAccess.Write)) {
+                        await response.Content.CopyToAsync(fs);
+                        fs.Close();
+                    }
+                } else {
+                    throw new FileNotFoundException($"Remote file [{remoteFile}] not found");
+                }
+            }
+        }
+
         private void HttpSendProgress(object sender, HttpProgressEventArgs e) {
-            HttpRequestMessage request = sender as HttpRequestMessage;
+            if(ProgressReport != null) ProgressReport(e.ProgressPercentage, e.BytesTransferred, e.TotalBytes);
+        }
+
+        private void HttpReceiveProgress(object sender, HttpProgressEventArgs e) {
             if(ProgressReport != null) ProgressReport(e.ProgressPercentage, e.BytesTransferred, e.TotalBytes);
         }
     }

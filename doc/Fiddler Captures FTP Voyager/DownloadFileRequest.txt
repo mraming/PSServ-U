@@ -1,0 +1,14 @@
+GET https://ftp.pdo.co.om/?Command=Download&File=%2FTemp%2F0kuldhvs.xlsx&InternalDir=Common&InternalFile=/Java/Responses/Result.csv HTTP/1.1
+User-Agent: FTP Voyager JV 15.1.7.162
+X-Csrf-Token: 14DEFBE55DD1A3833A137C0225C7E3A5
+Accept-Language: en-us,en;q=0.5
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+X-User-Agent: FTP%20Voyager%20JV%2015.1.7.162
+X-Is-FVJV: 1
+Cache-Control: no-cache
+Pragma: no-cache
+Host: ftp.pdo.co.om
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+Cookie: CsrfToken=14DEFBE55DD1A3833A137C0225C7E3A5; Session=_2576aa9eafd781636c09da5a1891f7505e300897c5f0fd220116189d3d227001aebb1a93f33fd208728b298e6e593d90bfca7bf0e0a1b3e81594264267d10240ff7a1b9dbf30c25ee0ae3d9367caeab5; SULang=en;Session=_2576aa9eafd781636c09da5a1891f7505e300897c5f0fd220116189d3d227001aebb1a93f33fd208728b298e6e593d90bfca7bf0e0a1b3e81594264267d10240ff7a1b9dbf30c25ee0ae3d9367caeab5;CsrfToken=14DEFBE55DD1A3833A137C0225C7E3A5
+
