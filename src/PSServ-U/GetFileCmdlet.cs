@@ -9,7 +9,6 @@ using static PSServU.ServU.Client;
 
 namespace PSServ_U {
     [Cmdlet(VerbsCommon.Get, "ServUFile", DefaultParameterSetName = "SessionId")]
-    [OutputType(typeof(RemoteFileSystemInfo))]
     public class GetFileCmdlet : PSCmdlet {
         /// <summary>
         /// Index of the ServU Session.
