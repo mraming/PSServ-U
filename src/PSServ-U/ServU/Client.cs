@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Net.Http.Handlers;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -152,6 +153,10 @@ namespace PSServU.ServU {
 
             var fileName = Path.GetFileName(file);
 
+            // To prevent the upload session from being terminated by the server, we need to query the Transfer Stats
+            // regularly. We do this using a timer that who's callback gets the transfer status ever 5 seconds
+            var statusTimer = new Timer(statusTimerCallback, transferId, 5000, 5000);
+
             using(var fs = new FileStream(file, FileMode.Open, FileAccess.Read)) {
 
                 HttpContent fileStreamContent = new StreamContent(fs);
@@ -170,6 +175,22 @@ namespace PSServU.ServU {
                         throw new ApplicationException($"Upload failed with response [{body}]");
                     }
                 }
+            }
+        }
+
+        private void statusTimerCallback(object state) {
+            int tid = (int)state;
+
+            // We're not really gona use the result - we just call the remote end to prevent a long running transfer
+            // from being terminated. Kindof a silly keep-alive.
+
+            // Note: HttpClient.GetAsync is thread-safe so we can safely reuse the HttpClient instance that's also used
+            // for the upload of the file. In fact, we should...
+
+            using(HttpResponseMessage response = httpClient.GetAsync($"/Web%20Client/FileUpload.xml?Command=TransferStats&TransferID={tid}").Result) {
+                response.EnsureSuccessStatusCode();
+                // We don't need the response, so we just read the entire response but don't use it.
+                response.Content.ReadAsStringAsync().Wait();
             }
         }
 
