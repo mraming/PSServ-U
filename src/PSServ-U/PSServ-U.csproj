@@ -5,6 +5,7 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AssemblyName>PSServU</AssemblyName>
     <RootNamespace>PSServU</RootNamespace>
+    <Version>1.5.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

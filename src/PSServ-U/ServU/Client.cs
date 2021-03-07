@@ -48,8 +48,10 @@ namespace PSServU.ServU {
             progressHandler.HttpSendProgress += HttpSendProgress;
             progressHandler.HttpReceiveProgress += HttpReceiveProgress;
 
+            
             httpClient = new HttpClient(progressHandler) {
-                BaseAddress = baseAddress
+                BaseAddress = baseAddress,
+                Timeout = Timeout.InfiniteTimeSpan
             };
 
             using(HttpResponseMessage response = await httpClient.PostAsync("/Common/Java/Responses/Login.xml?Command=Login", content)) {    
@@ -115,14 +117,15 @@ namespace PSServU.ServU {
                             var cols = line.Split(',');
                             // Skip header row which has fewer than 9 columns
                             if(cols.Length >= 9) {
+                                var name = Uri.UnescapeDataString(cols[0]);
                                 RemoteFileSystemInfo item = new RemoteFileSystemInfo {
                                     Type = cols[5] == "1" ? RemoteFileSystemItemType.Directory : RemoteFileSystemItemType.File,
                                     Length = cols[5] == "0" ? long.Parse(cols[1]) : (long?)null,
                                     CreationTime = DateTimeOffset.FromUnixTimeSeconds(long.Parse(cols[4])),
-                                    FullName = Path.Combine(remotePath, cols[0]),
+                                    FullName = Path.Combine(remotePath, name),
                                     LastAccessTime = DateTimeOffset.FromUnixTimeSeconds(long.Parse(cols[3])),
                                     LastWriteTime = DateTimeOffset.FromUnixTimeSeconds(long.Parse(cols[2])),
-                                    Name = cols[0]
+                                    Name = name
                                 };
 
                                 result.Add(item);

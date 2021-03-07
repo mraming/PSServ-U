@@ -75,7 +75,7 @@ namespace PSServ_U {
             int lastPercentReported = -1;
             ProgressReportHandler progressHandler = (int percent, long bytesSent, long? totalBytes) => {
                 if(lastPercentReported != percent) {
-                    var progressRecord = new ProgressRecord(activityId, $"Uploading {fqfn}", $"{bytesSent:#,##0} Bytes Uploaded of {totalBytes:#,##0}") {
+                    var progressRecord = new ProgressRecord(activityId, $"Downloading {fqfn}", $"{bytesSent:#,##0} Bytes downloaded of {totalBytes:#,##0}") {
                         PercentComplete = percent
                     };
 
