@@ -58,7 +58,8 @@ namespace PSServ_U {
                 try {
                     WriteObject(session.Client.GetFileSystemInfo(RemotePath), true);
                 } catch(Exception e) {
-                    WriteError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
+                    WriteDebug(e.ToString());
+                    ThrowTerminatingError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
                 }
             }
             }

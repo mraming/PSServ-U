@@ -96,7 +96,8 @@ namespace PSServ_U {
                         try {
                             session.Client.DownloadFile(rf, LocalPath, Overwrite.ToBool());
                         } catch(Exception e) {
-                            WriteError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
+                            WriteDebug(e.ToString());
+                            ThrowTerminatingError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
                         }
                     }
 

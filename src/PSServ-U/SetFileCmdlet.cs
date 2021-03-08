@@ -91,7 +91,8 @@ namespace PSServ_U {
                         try {
                             session.Client.SendFile(fqfn, RemotePath);
                         } catch(Exception e) {
-                            WriteError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
+                            WriteDebug(e.ToString());
+                            ThrowTerminatingError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
                         }
                     }
 

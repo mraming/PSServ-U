@@ -40,7 +40,8 @@ namespace PSServ_U {
                     session.Connect(url, Credential.UserName, Credential.GetNetworkCredential().Password);
                     WriteObject(session, true);
                 } catch(Exception e) {
-                    WriteError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
+                    WriteDebug(e.ToString());
+                    ThrowTerminatingError(new ErrorRecord(e, null, ErrorCategory.NotSpecified, session));
                 }
             }
         }
